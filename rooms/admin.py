@@ -100,7 +100,7 @@ class RoomAdmin(admin.ModelAdmin):
 @admin.register(models.Photo)
 class PhotoAdmin(admin.ModelAdmin):
 
-    """ Phot Admin Definition """
+    """ Photo Admin Definition """
 
     list_display = ("__str__", "get_thumbnail")
 

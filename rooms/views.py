@@ -87,8 +87,6 @@ class SearchView(View):
                 for facility in facilities:
                     filter_args["facilities"] = facility
 
-                print(filter_args)
-
                 qs = models.Room.objects.filter(**filter_args).order_by("-created")
 
                 paginator = Paginator(qs, 10, orphans=5)
