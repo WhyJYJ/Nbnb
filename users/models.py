@@ -46,3 +46,10 @@ class User(AbstractUser):
     )
 
     superhost = models.BooleanField(default=False)
+
+    email_confirmed = models.BooleanField(default=False)
+
+    email_secret = models.CharField(max_length=120, default="", blank=True)
+
+    def verify_email(self):
+        pass
