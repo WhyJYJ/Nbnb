@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/WhyJYJ/Airbnb-clone.git"
   },
+  "scripts": {
+    "css": "gulp"
+  },
   "homepage": "https://github.com/WhyJYJ/Airbnb-clone#readme",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
