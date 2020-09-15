@@ -197,7 +197,8 @@ def kakao_callback(request):
         messages.error(request, e)
         return redirect(reverse("users:login"))
 
-    class UserProfileView(DetailView):
 
-        model = models.User
-        context_object_name = "user_obj"
+class UserProfileView(DetailView):
+
+    model = models.User
+    context_object_name = "user_obj"
