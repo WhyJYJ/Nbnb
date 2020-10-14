@@ -28,16 +28,17 @@ class SearchForm(forms.Form):
         widget=forms.CheckboxSelectMultiple,
     )
 
-    class CreatePhotoForm(forms.ModelForm):
-        class Meta:
-            model = models.Photo
-            fields = ("caption", "file")
 
-        def save(self, pk, *args, **kwargs):
-            photo = super().save(commit=False)
-            room = models.Room.objects.get(pk=pk)
-            photo.room = room
-            photo.save()
+class CreatePhotoForm(forms.ModelForm):
+    class Meta:
+        model = models.Photo
+        fields = ("caption", "file")
+
+    def save(self, pk, *args, **kwargs):
+        photo = super().save(commit=False)
+        room = models.Room.objects.get(pk=pk)
+        photo.room = room
+        photo.save()
 
 
 class CreateRoomForm(forms.ModelForm):
