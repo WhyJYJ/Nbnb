@@ -1,3 +1,3 @@
-from django.shortcuts import render
+def create_review(request, room):
 
-# Create your views here.
+    pass
