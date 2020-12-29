@@ -1,3 +1,3 @@
 # Nbnb
 
-## Cloning Airbnb with Django, TailwindCSS, etc
+Cloning Airbnb with Django, TailwindCSS, etc
