@@ -17,7 +17,7 @@ django-seed = "*"
 django-dotenv = "*"
 requests = "*"
 pip-shims = "*"
-psycopg2 = "*"
+psycopg2 = "==2.8.4"
 
 [requires]
 python_version = "3.7"
