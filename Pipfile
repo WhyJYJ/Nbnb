@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 flake8 = "*"
 black = "*"
-awsebcli = "*"
 pipenv-to-requirements = "*"
 
 [packages]
@@ -19,6 +18,9 @@ requests = "*"
 pip-shims = "*"
 psycopg2 = "==2.8.4"
 sentry-sdk = "==0.13.2"
+django-storages = "*"
+boto3 = "*"
+pipenv-to-requirements = "*"
 
 [requires]
 python_version = "3.7"
