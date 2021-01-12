@@ -172,6 +172,20 @@ LOGIN_URL = "users/login"
 
 LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
 
+
+if not DEBUG:
+
+    DEFAULT_FILE_STORAGE = "config.custom_storages.UploadStorage"
+    STATICFILES_STORAGE = "config.custom_storages.StaticStorage"
+    AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+    AWS_STORAGE_BUCKET_NAME = "nbnb"
+    AWS_DEFAULT_ACL = "public-read"
+
+    AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.ap-northeast-2.amazonaws.com"
+    STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/static/"
+
+
 # Sentry
 
 if not DEBUG:
