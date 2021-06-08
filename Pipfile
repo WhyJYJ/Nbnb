@@ -43,7 +43,7 @@ virtualenv-clone = "==0.5.4"
 virtualenv = "==20.3.0"
 zipp = "==3.4.0"
 Django = "==2.2.5"
-Pillow = "==8.1.0"
+Pillow = "==8.2.0"
 Faker = "==5.4.0"
 
 [requires]
